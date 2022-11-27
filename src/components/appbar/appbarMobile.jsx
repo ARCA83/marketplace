@@ -1,18 +1,30 @@
 import React from "react";
-import { useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import AppbarMobile from "./appbarMobile";
-import AppbarDesktop from "./appbarDesktop";
+import { IconButton } from "@mui/material";
+import { AppbarContainer, AppbarHeader } from "../../styles/appbar";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import Actions from "./actions";
 
 
-export default function Appbar(){
-    const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.down('md'));
-    
+
+export default function AppbarMobile({matches}){
+
     return(
-        <>
-        {matches ? (<AppbarMobile matches={matches}/>):(<AppbarDesktop matches={matches}/>)}
-        </>
+        <AppbarContainer>
+            <IconButton>
+            <MenuIcon/>
 
-    );
+            </IconButton>
+            <AppbarHeader textAlign={"center"} variant="h4">
+            Menina Store
+            </AppbarHeader>
+            <IconButton>
+                <SearchIcon/>
+            </IconButton>
+            <Actions matches={matches}/>
+
+        </AppbarContainer>
+
+    )
+
 }

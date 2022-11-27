@@ -1,8 +1,9 @@
 import {styled} from "@mui/material/styles";
 import {List, Typography } from "@mui/material";
-import { Box, color } from "@mui/system";
+import { Box} from "@mui/system";
 import "@fontsource/montez"
 import { ColorLens } from "@mui/icons-material";
+import {Colors} from "../theme"
 
 //container
 export const AppbarContainer = styled(Box)(()=>({
@@ -22,7 +23,7 @@ export const AppbarHeader = styled(Typography)(()=>({
     flexGrow: 1,
     fontSize: '4em',
     fontFamily:'"Montez","cursive"',
-    color:color.secondary,
+    color:Colors.secondary,
 }));
 
 export const MyList = styled(List)(({type})=>({
@@ -41,7 +42,7 @@ export const ActionIconsContainerMobile = styled(Box)(()=>({
     width:'100%',
     alignItems:'center',
     zIndex:99,
-    borderTop:'1px solid ${Colors.border}'
+    borderTop:`1px solid ${Colors.border}`
 
 }))
 

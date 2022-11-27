@@ -1,17 +1,13 @@
 import { ListItemButton, ListItemText } from "@mui/material";
 import React from "react";
-import { AppbarContainer, AppbarHeader,MyList,ActionIconsContainerMobile,ActionIconsContainerDesktop } from "../../styles/appbar";
+import { AppbarContainer, AppbarHeader,MyList,} from "../../styles/appbar";
 import SearchIcon from "@mui/icons-material/Search";
 import Actions from "./actions";
 
 export default function AppbarDesktop({ matches} ){
 
-    const Component = matches
-    ? ActionIconsContainerMobile
-    : ActionIconsContainerDesktop;
-
     return (
-        <Component>
+   
             <AppbarContainer>
             <AppbarHeader>Menina Store</AppbarHeader>
             <MyList type="row">
@@ -24,9 +20,9 @@ export default function AppbarDesktop({ matches} ){
                     
                 </ListItemButton>
             </MyList>
-            <Actions/>
+            <Actions matches={matches}/>
         </AppbarContainer>
-        </Component>
+       
         
     /**
      * Appbar Container
@@ -34,7 +30,7 @@ export default function AppbarDesktop({ matches} ){
      * List
      */
     
-    )
+    );
 
     
-}
+};
