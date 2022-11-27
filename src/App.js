@@ -5,6 +5,7 @@ import theme from "./styles/theme";
 import AppBar from "./components/appbar";
 import Banner from "./components/banner";
 import Promotions from "./components/promotions";
+import Products from "./components/products";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <AppBar />
         <Banner />
         <Promotions/>
+        <Products/>
       </Container>
     </ThemeProvider>
   );
