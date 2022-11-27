@@ -2,7 +2,6 @@ import {styled} from "@mui/material/styles";
 import {List, Typography } from "@mui/material";
 import { Box} from "@mui/system";
 import "@fontsource/montez"
-import { ColorLens } from "@mui/icons-material";
 import {Colors} from "../theme"
 
 //container
@@ -35,7 +34,7 @@ export const MyList = styled(List)(({type})=>({
 
 export const ActionIconsContainerMobile = styled(Box)(()=>({
     display:'flex',
-    background:ColorLens.shaft,
+    background:Colors.shaft,
     position:'fixed',
     bottom:0,
     left:0,

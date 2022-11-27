@@ -1,11 +1,10 @@
 import { ThemeProvider } from "@emotion/react";
-import { Button,Container } from "@mui/material";
+import { Container } from "@mui/material";
 import React, { useEffect } from "react";
 import theme from "./styles/theme";
 import AppBar from "./components/appbar";
-
-
-
+import Banner from "./components/banner";
+import Promotions from "./components/promotions";
 
 function App() {
   useEffect(() => {
@@ -15,17 +14,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container
-      maxWidth="xl"
-      sx={{
-        background: '#fff'
-      }}
-    >
-      <AppBar/>
-
-      <Button variant="contained"> Test </Button>
-    </Container>
+        maxWidth="xl"
+        sx={{
+          background: "#fff",
+        }}
+      >
+        <AppBar />
+        <Banner />
+        <Promotions/>
+      </Container>
     </ThemeProvider>
-    
   );
 }
 
