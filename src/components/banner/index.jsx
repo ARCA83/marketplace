@@ -9,18 +9,20 @@ import {
   BannerTitle,
 } from "../../styles/banner";
 
+
+
 export default function Banner() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
+    const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <BannerContainer>
-      <BannerImage src="/images/banner/baner1.png"></BannerImage>
-
+      <BannerImage src="/images/banner/baner1.png"/>
       <BannerContent>
         <Typography variant="h6">Ultima Coleccion</Typography>
-        <BannerTitle variant="h6">Primavera Verano</BannerTitle>
-        <BannerDescription>
+        <BannerTitle variant="h2">Verano 2023</BannerTitle>
+        
+        <BannerDescription variant="subtitle">
           Ropa de verano, de entretiempo o para todo el año, las ultimas
           tendencias en ropa para adolescentes las puedes encontrar en esta
           firma especializada en moda.

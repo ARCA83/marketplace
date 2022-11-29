@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@emotion/react";
+import { ThemeProvider } from "@mui/system";
 import { Container } from "@mui/material";
 import React, { useEffect } from "react";
 import theme from "./styles/theme";

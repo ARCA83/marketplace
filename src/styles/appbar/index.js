@@ -46,6 +46,6 @@ export const ActionIconsContainerMobile = styled(Box)(()=>({
 }))
 
 export const ActionIconsContainerDesktop = styled(Box)(()=>({
-    flexGlow:0
+    flexGrow:0,
 
 }))

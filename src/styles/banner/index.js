@@ -1,6 +1,7 @@
-import {Box, Typography } from "@mui/material";
 import {styled} from "@mui/material/styles";
+import {Box, Typography } from "@mui/material";
 import {Colors} from "../theme";
+import { height } from "@mui/system";
 
 export const BannerContainer = styled(Box)(({matches,theme})=>({
 
@@ -11,33 +12,33 @@ export const BannerContainer = styled(Box)(({matches,theme})=>({
     padding:"0px,0px",
     background:Colors.light_gray,
     [theme.breakpoints.down('sm')]:{
-        flexDirection:'colum',
+        flexDirection:'column',
         alignItems:'center'
     }
 
 }));
 
-export const BannerContent = styled(Box)(()=>({
+export const BannerImage= styled('img')(({src,theme})=>({
+  src:`url(${src})`,
+  width:'500px',
+  [theme.breakpoints.down('md')]:{
+      with:'350px'
+  },
+  [theme.breakpoints.down('sm')]:{
+      with:'320px',
+      height:'300px'
+  },
+}));
+
+
+
+export const BannerContent = styled(Box)(() => ({
   display:"flex",
   flexDirection:"column",
   justifyContent:"center",
   maxWidth:420,
   padding:'31px',
 }));
-
-
-
-export const BannerImage= styled('img')(({src,theme})=>({
-    src:`url(${src})`,
-    width:'500px',
-    [theme.breakpoints.down('md')]:{
-        with:'350px'
-    },
-    [theme.breakpoints.down('sm')]:{
-        with:'350px'
-    },
-}))
-
 
 
 export const BannerTitle = styled(Typography)(({ matches, theme }) => ({

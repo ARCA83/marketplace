@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material/styles";
 import { Grid, useMediaQuery } from "@mui/material";
 import { products } from "../../data";
 import { Container } from "@mui/system";
@@ -12,10 +12,12 @@ export default function Products() {
     <Grid
       item
       key={product.id}
-      disply="flex"
+      display="flex"
       flexDirection={"column"}
       alignItems="center"
-    ></Grid>
+    >
+      
+    </Grid>
   ));
 
   return (
