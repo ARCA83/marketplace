@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@mui/system";
-import { Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import theme from "./styles/theme";
 import AppBar from "./components/appbar";
@@ -23,6 +23,9 @@ function App() {
         <AppBar />
         <Banner />
         <Promotions/>
+        <Box display="flex" justifyContent="center" sx={{p:4}}>
+          <Typography variant="h4"> "Se diferente" </Typography>        
+        </Box>
         <Products/>
       </Container>
     </ThemeProvider>

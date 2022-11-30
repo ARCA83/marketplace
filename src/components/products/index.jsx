@@ -1,8 +1,8 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
-import { Grid, useMediaQuery } from "@mui/material";
+import { Grid, useMediaQuery, Container } from "@mui/material";
 import { products } from "../../data";
-import { Container } from "@mui/system";
+import SingleProduct from "./SingleProduct";
 
 export default function Products() {
   const theme = useTheme();
@@ -12,22 +12,28 @@ export default function Products() {
     <Grid
       item
       key={product.id}
+      xs={2}
+      sm={4}
+      md={4}
       display="flex"
       flexDirection={"column"}
       alignItems="center"
     >
-      
+      <SingleProduct product={product} matches={matches} />
     </Grid>
   ));
 
   return (
     <Container>
-        <Grid container justifyContent={"center"}
-        sx={{margin:'20px 4px 10px 4px'}}>
-
+      <Grid
+        container
+        spacing={{ xs: 10, md: 3 }}
+        justifyContent={"center"}
+        sx={{ margin: "20px 4px 10px 4px" }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
         {renderProducts}
-        </Grid>
+      </Grid>
     </Container>
-
-  ) ;
+  );
 }
