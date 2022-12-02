@@ -9,7 +9,7 @@ export default function AppbarDesktop({ matches }) {
     <AppbarContainer>
       <AppbarHeader>Menina Store</AppbarHeader>
       <MyList type="row">
-        <ListItemText primary="Home" />
+        <ListItemText primary="Inicio" />
         <ListItemText primary="Categorias" />
         <ListItemText primary="Productos" />
         <ListItemText primary="Contactanos" />

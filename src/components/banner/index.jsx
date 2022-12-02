@@ -6,6 +6,7 @@ import {
   BannerContent,
   BannerDescription,
   BannerImage,
+  BannerShopButton,
   BannerTitle,
 } from "../../styles/banner";
 
@@ -27,6 +28,7 @@ export default function Banner() {
           tendencias en ropa para adolescentes las puedes encontrar en esta
           firma especializada en moda.
         </BannerDescription>
+        <BannerShopButton color="primary">Show Now </BannerShopButton>
       </BannerContent>
     </BannerContainer>
   );

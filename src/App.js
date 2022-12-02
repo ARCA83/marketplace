@@ -6,6 +6,9 @@ import AppBar from "./components/appbar";
 import Banner from "./components/banner";
 import Promotions from "./components/promotions";
 import Products from "./components/products";
+import Footer from "./components/footer";
+import AppDrawer from "./components/drawer";
+import { UIProvider } from "./context/ui";
 
 function App() {
   useEffect(() => {
@@ -20,13 +23,17 @@ function App() {
           background: "#fff",
         }}
       >
-        <AppBar />
-        <Banner />
-        <Promotions/>
-        <Box display="flex" justifyContent="center" sx={{p:4}}>
-          <Typography variant="h4"> "Se diferente" </Typography>        
-        </Box>
-        <Products/>
+        <UIProvider>
+          <AppBar />
+          <Banner />
+          <Promotions />
+          <Box display="flex" justifyContent="center" sx={{ p: 4 }}>
+            <Typography variant="h4"> "Se diferente" </Typography>
+          </Box>
+          <Products />
+        </UIProvider>
+        <Footer />
+        <AppDrawer />
       </Container>
     </ThemeProvider>
   );
