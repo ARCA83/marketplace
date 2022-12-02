@@ -1,5 +1,5 @@
-import {styled} from "@mui/material/styles";
 import {Box, Typography } from "@mui/material";
+import {styled} from "@mui/material/styles";
 import {Colors} from "../theme";
 
 export const BannerContainer = styled(Box)(({matches,theme})=>({
@@ -9,22 +9,22 @@ export const BannerContainer = styled(Box)(({matches,theme})=>({
     width:"100%",
     height:"100%",
     padding:"0px,0px",
-    background:Colors.light_gray,
+    background: Colors.light_gray,
     [theme.breakpoints.down('sm')]:{
         flexDirection:'column',
-        alignItems:'center'
+        alignItems:'center',
     }
 
 }));
 
-export const BannerImage= styled('img')(({src,theme})=>({
+export const BannerImage= styled('img')(({src,theme}) => ({
   src:`url(${src})`,
   width:'500px',
   [theme.breakpoints.down('md')]:{
       with:'350px'
   },
   [theme.breakpoints.down('sm')]:{
-      with:'320px',
+      width:'320px',
       height:'300px'
   },
 }));

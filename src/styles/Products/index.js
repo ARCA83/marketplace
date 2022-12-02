@@ -1,5 +1,6 @@
-import { styled } from "@mui/system";
-import { Button, IconButton, Box } from "@mui/material";
+import styled from "@emotion/styled"
+import { Button, IconButton } from "@mui/material";
+import { Box } from "@mui/system";
 import { slideInBottom, slideInRight } from "../../animation";
 import { Colors } from "../theme";
 
@@ -29,24 +30,22 @@ export const ProductActionButton = styled(IconButton)(() => ({
   margin: 4,
 }));
 
-export const ProductFavButton = styled(ProductActionButton,{shoudForwardProp:(prop)=>prop!=='isFav'})(
-  ({ isFav, theme }) => ({
-    color: isFav ? Colors.primary : Colors.light,
-    [theme.breakpoints.up("md")]: {
-      positiion: "absolute",
-      rigth: 0,
-      top: 0,
-    },
-  })
-);
+export const ProductFavButton = styled(ProductActionButton)(({ isfav, theme }) => ({
+  color: isfav ? Colors.primary : Colors.light,  
+  [theme.breakpoints.up("md")]: {
+    position: "absolute",
+    right: 0,
+    top: 0,
+  },
+}));
 
 export const ProductAddToCart = styled(Button, {
   shouldForwardProp: (prop) => prop !== "show",
 })(({ show, theme }) => ({
   width: "120px",
   fontSize: "12px",
-  [theme.breakpoints.up('md')]: {
-    position: "absolute",
+  [theme.breakpoints.up("md")]: {
+    position: "absolute",    
     bottom: "2%",
     width: "300px",
     padding: "10px 5px",
@@ -58,7 +57,7 @@ export const ProductAddToCart = styled(Button, {
   opacity: 0.9,
 }));
 
-export const ProductMetaWrapper = styled(Box)(({ theme }) => ({
+export const ProductMetaWrapper = styled(Box)(() => ({
   padding: 4,
   display: "flex",
   flexDirection: "column",
