@@ -28,12 +28,12 @@ function App() {
           <Banner />
           <Promotions />
           <Box display="flex" justifyContent="center" sx={{ p: 4 }}>
-            <Typography variant="h4"> "Se diferente" </Typography>
+            <Typography variant="h4"> Categorias </Typography>
           </Box>
           <Products />
-        </UIProvider>
         <Footer />
         <AppDrawer />
+        </UIProvider>
       </Container>
     </ThemeProvider>
   );

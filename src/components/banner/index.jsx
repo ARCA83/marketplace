@@ -14,7 +14,7 @@ import {
 
 export default function Banner() {
   const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.down('md'));
+    const {matches} = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <BannerContainer>

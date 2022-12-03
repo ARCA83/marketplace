@@ -1,5 +1,12 @@
-
-import { List,Grid,Box, Typography, ListItemText,Stack, Button  } from "@mui/material";
+import {
+  List,
+  Grid,
+  Box,
+  Typography,
+  ListItemText,
+  Stack,
+  Button,
+} from "@mui/material";
 import React from "react";
 import { Colors } from "../../styles/theme";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -8,28 +15,28 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { SubscribeTf, FooterTitle } from "../../styles/footer";
 import SendIcon from "@mui/icons-material/Send";
 
-
-
-export default function Footer (){
-
-    return(
-        <Box
-        sx={{
-            background: Colors.shaft,
-            color: Colors.white,
-            pt: 12,
-            pb: 12,
-            fontSize:{xs:"12px", md:"14px"},
-            }
-        }
-        
-        ><Grid container spacing={2} justifyContent="center">
+export default function Footer() {
+  return (
+    <Box
+      sx={{
+        background: Colors.shaft,
+        color: Colors.white,
+        pt: 12,
+        pb: 12,
+        fontSize: { xs: "12px", md: "14px" },
+      }}
+    >
+      <Grid container spacing={2} justifyContent="center">
         <Grid item md={6} lg={4}>
           <FooterTitle variant="body1"> NOSOTROS </FooterTitle>
-          <Typography variant="caption2">
-            Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor
-            incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud.
+          <Typography variant="caption2" padding={6}>
+            Menina Store es una empresa familiar con mas de 5 años innovando
+            en el sector de ropa y accesorios. 
+            Menina Store, fue creada el
+            2016 como una compañía de venta directa de ropa femenina, buscamos
+            ofrecer a las mujeres emprendedoras la oportunidad de crecer y
+            desarrollarse, haciendo realidad cada uno de sus sueños y metas a
+            través del desarrollo de sus negocios. 
           </Typography>
           <Box
             sx={{

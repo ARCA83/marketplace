@@ -1,44 +1,44 @@
 export const products = [
     {
         id: 1,
-        name: "Super Backpack",
+        name: "Enterizos",
         price: 129.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+        description: "Contamos con colores disponibles en tono azul, negro y palo rosa, tambien en tallas: S, M, L los enterizos son en material suet ",
         image: "/images/products/bag_01.png"
     },
     {
         id: 2,
-        name: "New Hip",
-        price: 199.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+        name: "Conjuntos",
+        price: 149.99,
+        description:"Contamos con colores disponibles en tono azul, negro y palo rosa, tambien en tallas: S, M, L; los conjuntos son cuentan con pantalones en material Cordon y polos Algodón pima(Gossypium barbadense)",
         image: "/images/products/bag_02.png"
     },
     {
         id: 3,
-        name: "Elite Series",
+        name: "Blusas",
         price: 189.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+        description: "Contamos con colores disponibles en tono blanco, rosado y verde limon, tambien en tallas: S, M, L las blusas son confeccionadas en tela plana ",
         image: "/images/products/bag_03.png"
     },
     {
         id: 4,
-        name: "Casual",
-        price: 129.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+        name: "Todo Polos",
+        price: 99,
+        description: "Contamos con colores disponibles en tono azul, negro y blanco, tambien en tallas: S, M, L los polos tienen la opcion de diseños y estampados personalizados, todos son de algodon pima(Gossypium barbadense) ",
         image: "/images/products/bag_04.png"
     },
     {
         id: 5,
-        name: "Best Tote",
-        price: 399.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+        name: "Moda Playa",
+        price: 120,
+        description: "Contamos con colores disponibles en tono plomo, blanco y rosado bebe, tambien en tallas: S, M, L los chals son en material hilo de algodon ",
         image: "/images/products/bag_05.png"
     },
     {
         id: 6,
-        name: "Charming Series",
-        price: 689.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+        name: "Moda Urbana",
+        price: 100,
+        description: "Contamos con Shorts en Jeans disponibles en tono azul, negro y blanco, tambien en tallas: 28, 30, 32 las enterizos son en material suet ",
         image: "/images/products/bag_06.png"
     }
 ]
